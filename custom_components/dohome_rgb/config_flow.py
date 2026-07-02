@@ -22,9 +22,6 @@ class DoHomeConfigFlow(ConfigFlow, domain=DOMAIN):
 
     VERSION: int = 2
 
-    def __init__(self):
-        pass
-
     @override
     async def async_step_user(self, user_input: dict[str, str] | None = None):
         """Handle the initial step where the gateway address is entered."""
